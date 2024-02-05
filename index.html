@@ -10,24 +10,36 @@
     <div class="container">
       <div>
         <h3>HOME</h3>
-        <p>0</p>
-        <div id="home">
-          <button>+1</button>
-          <button>+2</button>
-          <button>+3</button>
+        <p id="home-el" class="points cursed">0</p>
+        <div class="score">
+          <button class="home1 btn point-btn cursed" onclick="home1()">
+            +1
+          </button>
+          <button class="home2 btn point-btn cursed" onclick="home2()">
+            +2
+          </button>
+          <button class="home3 btn point-btn cursed" onclick="home3()">
+            +3
+          </button>
         </div>
       </div>
-      <div id="away">
+      <div>
         <h3>AWAY</h3>
-        <p>0</p>
-        <div>
-          <button>+1</button>
-          <button>+2</button>
-          <button>+3</button>
+        <p id="away-el" class="points cursed">0</p>
+        <div class="score">
+          <button class="away1 btn point-btn cursed" onclick="away1()">
+            +1
+          </button>
+          <button class="away2 btn point-btn cursed" onclick="away2()">
+            +2
+          </button>
+          <button class="away3 btn point-btn cursed" onclick="away3()">
+            +3
+          </button>
         </div>
       </div>
     </div>
-    <button>New Game</button>
+    <button id="new-game" class="btn" onclick="newGame()">New Game</button>
     <script src="index.js"></script>
   </body>
 </html>
